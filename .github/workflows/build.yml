@@ -22,3 +22,12 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
         with:
           arguments: build
+      - name: Assemble jar with Gradle
+        run: ./gradlew assemble
+      - name: Upload jar
+        run: mkdir staging && cp build/libs/curioscreativepatch-*.jar staging
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Package
+          path: staging
+      
