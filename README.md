@@ -86,6 +86,7 @@ function pk_cr_di:entities/player/data/restore/all {subpath:"regular_dimension"}
 
 ### 🥳 Final Steps
 This project requires Curios API (of course!) make sure to install it! The required version is `9.5.1+1.21.1`.
+Install your built jar from `build/libs/curioscreativepatch-[VERSION].jar` or download the latest version [here](https://github.com/AidanWright/Curios-CreativeDimension-Patch/releases/latest).
 
 You're now good to go!
 
